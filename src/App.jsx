@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 import Todo from "./components/Todo";
 
 import Search from "./components/Search";
@@ -11,9 +10,6 @@ import "./App.css";
 import TodoForm from "./components/TodoForm";
 
 const App = () => {
-
-  
-
   const [todos, setTodos] = useState([
     {
       id: 1,
@@ -56,7 +52,6 @@ const App = () => {
 
   return (
     <div className="app">
-      <title>Todo-List</title>
       <h1>Lista de Tarefas</h1>
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
